@@ -1,0 +1,11 @@
+# dependencies (only needed to run the helper scripts in tools/)
+node_modules/
+
+# original, full-size photos (the optimised copies live in assets/img/)
+originals/
+
+# operating system / editor files
+.DS_Store
+Thumbs.db
+*.log
+.vscode/

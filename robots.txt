@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mpajkov.github.io/villa-istra-kamenjak/sitemap.xml
