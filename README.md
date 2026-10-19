@@ -91,6 +91,8 @@ Other attributes work the same way: `data-hr-alt`, `data-hr-placeholder`, `data-
 
 The simplest route is GitHub Pages: *Settings, Pages, Deploy from a branch, `main` / root*. Any other host works too: upload everything and keep the folder structure. When the site moves to its own domain, replace `https://mpajkov.github.io/villa-istra-kamenjak/` in `index.html`, the four apartment pages, `404.html`, `sitemap.xml` and `robots.txt` (a search for that text finds every place).
 
+**This public copy is a showcase.** Every page carries `<meta name="robots" content="noindex">` (marked with a comment in the HTML), so search engines do not list it next to the real site. For a real launch, delete that line from `index.html` and the four apartment pages, and replace the placeholder contact details.
+
 **Headers.** GitHub Pages cannot set HTTP headers, so each page carries its Content-Security-Policy as a `<meta>` tag. On Netlify or Cloudflare Pages the included `_headers` file additionally adds clickjacking protection, HSTS and cache rules.
 
 **Fonts and GDPR.** Headings (Playfair Display) and text (Jost) are loaded from Google Fonts, which means the visitor's IP address reaches Google. For a strictly local setup, download both families from [fonts.google.com](https://fonts.google.com) as WOFF2, put them in `assets/fonts/`, add `@font-face` rules to the top of `style.css`, delete the three Google `<link>` lines in each page and remove the two Google hosts from the `Content-Security-Policy` (`style-src` and `font-src`).

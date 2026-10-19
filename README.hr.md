@@ -91,6 +91,8 @@ Isto rade i `data-hr-alt`, `data-hr-placeholder`, `data-hr-aria-label` i `data-h
 
 Najjednostavnije je GitHub Pages: *Settings, Pages, Deploy from a branch, `main` / root*. Radi i svaki drugi hosting: prenesi sve datoteke i sačuvaj strukturu mapa. Kad stranica dobije vlastitu domenu, zamijeni `https://mpajkov.github.io/villa-istra-kamenjak/` u `index.html`, četiri stranice apartmana, `404.html`, `sitemap.xml` i `robots.txt` (pretraga tog teksta pronađe sva mjesta).
 
+**Ova javna kopija je primjer rada.** Svaka stranica nosi `<meta name="robots" content="noindex">` (u HTML-u je označeno komentarom), pa je tražilice ne prikazuju uz pravu stranicu. Za pravu objavu obriši tu liniju iz `index.html` i četiri stranice apartmana te zamijeni izmišljene kontakt podatke.
+
 **Zaglavlja.** GitHub Pages ne može postavljati HTTP zaglavlja, pa svaka stranica nosi svoju Content-Security-Policy kao `<meta>` oznaku. Na Netlifyju ili Cloudflare Pagesu priložena datoteka `_headers` dodatno uključuje zaštitu od ugrađivanja stranice (clickjacking), HSTS i pravila keširanja.
 
 **Fontovi i GDPR.** Naslovi (Playfair Display) i tekst (Jost) učitavaju se s Google Fonts, što znači da IP adresa posjetitelja stiže do Googlea. Za potpuno lokalno rješenje preuzmi obje obitelji s [fonts.google.com](https://fonts.google.com) u WOFF2 formatu, stavi ih u `assets/fonts/`, na vrh `style.css` dodaj `@font-face` pravila, obriši tri Google `<link>` retka u svakoj stranici i makni dva Google poslužitelja iz `Content-Security-Policy` (`style-src` i `font-src`).
