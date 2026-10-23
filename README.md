@@ -1,8 +1,8 @@
 # Villa Istra Kamenjak
 
-**A fast, bilingual (English / Croatian) website for a holiday-apartment property in Premantura, Istria**, with photo galleries, a live availability calendar, automatic price calculation and a booking-inquiry form.
+**A fast, bilingual (English / Croatian) website for a holiday-apartment property in Premantura, Istria**, with photo galleries, an availability calendar, automatic price calculation and a booking-inquiry form.
 
-[**Live demo**](https://mpajkov.github.io/villa-istra-kamenjak/) · [Hrvatski opis](README.hr.md) · Built by [mpajkov](https://github.com/mpajkov)
+[**Preview**](https://mpajkov.github.io/villa-istra-kamenjak/) · [Hrvatski opis](README.hr.md) · Built by [mpajkov](https://github.com/mpajkov)
 
 ![Villa Istra Kamenjak on desktop and phone](docs/screenshots/overview.jpg)
 
@@ -12,7 +12,7 @@
 
 ## What the guest gets
 
-- **Four pages** (home plus three apartments and the garden), each with a swipeable photo gallery that works with touch, mouse and keyboard.
+- **Five pages** (home plus four apartments), each with a swipeable photo gallery that works with touch, mouse and keyboard.
 - **Availability calendar** per apartment: choose arrival and departure, see the price per night, the season and the **total price**, then send an inquiry. Booked nights are crossed out, and the minimum stay is enforced per season.
 - **English or Croatian in one click.** The choice is remembered, Croatian browsers open the Croatian version automatically, and `?lang=hr` links work for sharing.
 - A site that is **comfortable on every screen**: phone, tablet, laptop and wide monitors.
@@ -29,12 +29,12 @@
 
 ## Quality checks
 
-Every claim below was measured on this code with an automated Playwright/Chromium test harness, except the Lighthouse row, which was run on the live demo.
+Every claim below was measured on this code with an automated Playwright/Chromium test harness, except the Lighthouse and Speed rows, which were measured on the preview site.
 
 | Area | Result |
 |---|---|
-| **Lighthouse** (mobile, live demo, median of 3 runs, 23 Oct 2026) | Performance 87, Accessibility 100, Best practices 100, SEO 66. SEO is lower only because this demo copy deliberately carries `noindex` |
-| **Speed** (simulated mid-range phone: 4x CPU slowdown, 1.6 Mbit/s, 150 ms latency) | First paint 0.55 to 0.62 s, largest paint 0.55 to 1.1 s, layout shift 0, blocking time under 0.15 s |
+| **Lighthouse** (Lighthouse 12.8.2, default mobile simulation, preview site, median of 3 runs, 23 Oct 2026) | Performance 87, Accessibility 100, Best practices 100, SEO 66. SEO is lower only because this demo copy deliberately carries `noindex` |
+| **Speed** (Lighthouse 12.8.2 default mobile simulation: 4x CPU slowdown, 1.6 Mbit/s, 150 ms latency; median of 3, 23 Oct 2026) | First paint about 3.0 s, largest paint about 3.3 s, layout shift about 0.04, blocking time 0 ms |
 | **Weight** | Home page about 233 KB, apartment pages 160 to 450 KB on first view (photos load as the guest browses) |
 | **Responsive** | No sideways scrolling and nothing outside the screen at 320, 375, 768, 1024 and 1440 px, in both languages; layouts reviewed on phone, tablet and desktop |
 | **Accessibility** | Skip link, visible focus, full keyboard use of gallery and calendar (arrow keys, PageUp/PageDown), screen-reader labels and live regions, text contrast 4.5:1 or better (also measured on text over photos), tap targets at least 24 px, reduced-motion support |

@@ -2,7 +2,7 @@
 
 **Brza dvojezična (hrvatski / engleski) web stranica za apartmane u Premanturi u Istri**, s galerijama fotografija, kalendarom slobodnih termina, automatskim izračunom cijene i formom za upit.
 
-[**Pogledaj uživo**](https://mpajkov.github.io/villa-istra-kamenjak/) · [English description](README.md) · Izradio [mpajkov](https://github.com/mpajkov)
+[**Pregled**](https://mpajkov.github.io/villa-istra-kamenjak/) · [English description](README.md) · Izradio [mpajkov](https://github.com/mpajkov)
 
 ![Villa Istra Kamenjak na računalu i mobitelu](docs/screenshots/overview.jpg)
 
@@ -12,7 +12,7 @@
 
 ## Što dobiva gost
 
-- **Četiri stranice** (početna, tri apartmana i vrt), svaka s galerijom fotografija koja radi dodirom, mišem i tipkovnicom.
+- **Pet stranica** (početna i četiri apartmana), svaka s galerijom fotografija koja radi dodirom, mišem i tipkovnicom.
 - **Kalendar slobodnih termina** za svaki apartman: gost odabere dolazak i odlazak, vidi cijenu po noći, sezonu i **ukupnu cijenu**, pa pošalje upit. Zauzete noći su precrtane, a minimalni boravak vrijedi po sezonama.
 - **Hrvatski ili engleski jednim klikom.** Izbor se pamti, preglednici na hrvatskom otvaraju hrvatsku verziju sami, a linkovi oblika `?lang=en` rade za dijeljenje.
 - Stranica koja je **ugodna na svakom ekranu**: mobitel, tablet, laptop i veliki monitori.
@@ -29,12 +29,12 @@
 
 ## Provjere kvalitete
 
-Sve navedeno izmjereno je na ovom kodu automatiziranim testovima (Playwright/Chromium), osim retka Lighthouse, koji je pokrenut na demo stranici.
+Sve navedeno izmjereno je na ovom kodu automatiziranim testovima (Playwright/Chromium), osim redaka Lighthouse i Brzina, koji su izmjereni na stranici za pregled.
 
 | Područje | Rezultat |
 |---|---|
-| **Lighthouse** (mobitel, demo stranica, medijan 3 mjerenja, 23. 10. 2026.) | Performance 87, Accessibility 100, Best practices 100, SEO 66. SEO je niži samo zato što ova demo kopija namjerno ima `noindex` |
-| **Brzina** (simulirani srednji mobitel: procesor 4 puta sporiji, 1,6 Mbit/s, kašnjenje 150 ms) | Prvi prikaz 0,55 do 0,62 s, najveći prikaz 0,55 do 1,1 s, pomak rasporeda 0, vrijeme blokiranja ispod 0,15 s |
+| **Lighthouse** (Lighthouse 12.8.2, zadana simulacija mobitela, stranica za pregled, medijan 3 mjerenja, 23. 10. 2026.) | Performance 87, Accessibility 100, Best practices 100, SEO 66. SEO je niži samo zato što ova demo kopija namjerno ima `noindex` |
+| **Brzina** (zadana simulacija mobitela u Lighthouseu 12.8.2: procesor 4 puta sporiji, 1,6 Mbit/s, kašnjenje 150 ms; medijan 3 mjerenja, 23. 10. 2026.) | Prvi prikaz oko 3,0 s, najveći prikaz oko 3,3 s, pomak rasporeda oko 0,04, vrijeme blokiranja 0 ms |
 | **Veličina** | Početna stranica oko 233 KB, stranice apartmana 160 do 450 KB pri prvom otvaranju (fotografije se učitavaju dok gost listaja) |
 | **Prilagodba ekranima** | Nema vodoravnog pomicanja ni sadržaja izvan ekrana pri 320, 375, 768, 1024 i 1440 px, na oba jezika; izgled pregledan na mobitelu, tabletu i računalu |
 | **Pristupačnost** | Poveznica "preskoči na sadržaj", vidljiv fokus, galerija i kalendar u potpunosti rade tipkovnicom (strelice, PageUp/PageDown), oznake za čitače ekrana, kontrast teksta 4,5:1 ili bolji (izmjeren i na tekstu preko fotografija), površine za dodir najmanje 24 px, podrška za smanjeno kretanje |

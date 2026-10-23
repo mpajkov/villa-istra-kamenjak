@@ -10,7 +10,7 @@ window.VILLA_CONFIG = {
 
     // Guest enquiries arrive at this address.
     // Upiti gostiju stižu na ovu adresu.
-    email: "info@villapremantura.com",
+    email: "demo@example.com",
 
     // Free key from https://web3forms.com (about 250 messages a month).
     // How: "Create Access Key" -> enter the email above -> the key arrives by email.

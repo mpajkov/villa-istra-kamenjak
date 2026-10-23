@@ -110,7 +110,7 @@
             "bk.message": "Poruka",
             "bk.optional": "(neobavezno)",
             "bk.namePh": "Ivan Horvat",
-            "bk.emailPh": "ivan@primjer.hr",
+            "bk.emailPh": "ivan@example.com",
             "bk.msgPh": "Vrijeme dolaska, pitanja...",
             "bk.send": "Pošalji upit za rezervaciju",
             "bk.note": "Ovo je upit, a ne potvrđena rezervacija. Odgovaramo u roku od 24 sata.",
