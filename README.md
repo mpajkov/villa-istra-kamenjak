@@ -1,6 +1,6 @@
 # Villa Istra Kamenjak
 
-**A fast, bilingual (English / Croatian) website for a holiday-apartment property in Premantura, Istria**, with photo galleries, an availability calendar, automatic price calculation and a booking-inquiry form.
+**A fast, bilingual (English / Croatian) website for a holiday-apartment property in Premantura, Istria**, with photo galleries, an availability calendar, automatic price calculation and a booking-enquiry form.
 
 [**Preview**](https://mpajkov.github.io/villa-istra-kamenjak/) · [Hrvatski opis](README.hr.md) · Built by [mpajkov](https://github.com/mpajkov)
 
@@ -13,14 +13,14 @@
 ## What the guest gets
 
 - **Five pages** (home plus four apartments), each with a swipeable photo gallery that works with touch, mouse and keyboard.
-- **Availability calendar** per apartment: choose arrival and departure, see the price per night, the season and the **total price**, then send an inquiry. Booked nights are crossed out, and the minimum stay is enforced per season.
+- **Availability calendar** per apartment: choose arrival and departure, see the price per night, the season and the **total price**, then send an enquiry. Booked nights are crossed out, and the minimum stay is enforced per season.
 - **English or Croatian in one click.** The choice is remembered, Croatian browsers open the Croatian version automatically, and `?lang=hr` links work for sharing.
 - A site that is **comfortable on every screen**: phone, tablet, laptop and wide monitors.
 
 ## What the owner gets
 
 - **One settings file** (`assets/js/config.js`) for prices, seasons, minimum stays and booked dates. No code knowledge needed.
-- Inquiries arrive **by email**, always in English for the owner, with the guest's language noted and "Reply" going straight to the guest. Free for roughly 250 messages a month via [Web3Forms](https://web3forms.com). Until a key is entered, the guest's own email app opens with the message ready, so no inquiry is ever lost.
+- Enquiries arrive **by email**, always in English for the owner, with the guest's language noted and "Reply" going straight to the guest. Free for roughly 250 messages a month via [Web3Forms](https://web3forms.com). Until a key is entered, the guest's own email app opens with the message ready, so no enquiry is ever lost.
 - **Spam protection without CAPTCHAs** (hidden trap field, timing check and a short cool-down), so guests are never asked to click traffic lights.
 - **Zero running costs**: static files on GitHub Pages, Netlify, Cloudflare Pages or any ordinary web host.
 - Friendly to search engines: page titles and descriptions in both languages, Open Graph preview image, `sitemap.xml`, `robots.txt` and structured data for the property.
@@ -57,7 +57,7 @@ assets/
   css/style.css            the single stylesheet (table of contents at the top)
   js/config.js             PRICES, SEASONS, BOOKED DATES, email  <- the file to edit
   js/i18n.js               English / Croatian switch and the texts written by JavaScript
-  js/calendar.js           availability calendar and booking inquiry
+  js/calendar.js           availability calendar and booking enquiry
   js/slider.js             photo gallery
   js/contact.js            sending messages and spam protection
   img/                     optimised photos (WebP)
@@ -74,7 +74,7 @@ Open `index.html` by double-clicking it: everything works offline too, apart fro
 
 **Prices, seasons, minimum stays, booked dates.** Edit `assets/js/config.js`. Every setting has a short comment in English and Croatian. Booked stays are written as `["2027-07-10", "2027-07-17"]` (arrival, departure). The departure day itself stays free for the next guest.
 
-**Receiving inquiries by email.** Create a free access key at [web3forms.com](https://web3forms.com) (enter the owner's email, the key arrives by mail) and paste it into `web3formsKey` in `config.js`. The key is meant to be public.
+**Receiving enquiries by email.** Create a free access key at [web3forms.com](https://web3forms.com) (enter the owner's email, the key arrives by mail) and paste it into `web3formsKey` in `config.js`. The key is meant to be public.
 
 **Texts.** English is written normally in the HTML. The Croatian version sits in a `data-hr` attribute on the same element:
 
